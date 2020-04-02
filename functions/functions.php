@@ -460,9 +460,9 @@ function recover_password()
                 $reset_code = mt_rand();
 
                 // set the reset code for user to expire in 10 minutes (600 secs) to reset their password:
-                setcookie("ResetCode", $reset_code, time() + 600);
+                setcookie("ResetCode", $reset_code, time() + 1200);
 
-                $message = " Here is your reset code which expires in 10 minutes: $reset_code  \n " . LOCAL_HOST_PATH . "/code.php?email=$email";
+                $message = " Here is your reset code which expires in 20 minutes: $reset_code  \n " . LOCAL_HOST_PATH . "/code.php?email=$email";
 
                 $subject = "PASSWORD RESET";
                 send_email($email, $subject, $message);
