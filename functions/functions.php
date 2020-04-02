@@ -262,12 +262,11 @@ function validate_user_registration()
             // now send to new reqistered recipient
 
             $subject = "ACTIVATE Account";
-            $msg = "Please click on the activation page link below to activate your account
- http://localhost:8082/exercise-files/login.php?email=$email&code=$validation_code";
+            $msg = "Please click on the activation page link below to activate your account"
+                . LOCAL_HOST_PATH . "/login.php?email=$email&code=$validation_code";
 
             if (send_email($email, $subject, $msg)) {
-                //  redirect("index.php");
-                set_message("<div class='alert alert-info' role='alert'>You are registered, please check your email or spam folder to activate your account</div>");
+                set_message("<div class='alert alert-info' role='alert'>You are registered! Please check your email or spam folder to activate your account.</div>");
             } else {
                 set_message("<div class='alert alert-info' role='alert'>email activation email send fail.</div>");
             }
@@ -425,8 +424,11 @@ function check_activation($email, $validation_code)
 {
 
     $subject = "ACTIVATE Account";
-    $msg = "Please click on the activation page link below to activate your account:
- http://localhost:8082/exercise-files/login.php?email=$email&code=$validation_code";
+    //   $msg = "Please click on the activation page link below to activate your account:
+    http: //localhost:8082/exercise-files/login.php?email=$email&code=$validation_code";
+
+    $msg = "Please click on the activation page link below to activate your account:"
+        . LOCAL_HOST_PATH . "/login.php?email=$email&code=$validation_code";
 
     // now send activation link (GET)method to the user recipient email indicated in $msg above
 
