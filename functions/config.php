@@ -4,7 +4,7 @@ include_once "db.php";
 $config = array(
     'DB_HOST' => 'localhost',
     'DB_USERNAME' => 'root',
-    'DB_PASSWORD' => 'root123',
+    'DB_PASSWORD' => '',
     'DB_DATABASE' => 'login_db',
     'CHAR_SET' => 'utf8',
 );
