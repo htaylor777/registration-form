@@ -1,4 +1,5 @@
 # registration-login form
+
 php registration login 
 This is a registration / login system 
 can be used to login to any site.
@@ -9,6 +10,7 @@ features include:
 - reset passwords
 - sessions
 - email activation
+- phpmailer, sends email to users for validating and activating their credientals
 
 Pages:
 
