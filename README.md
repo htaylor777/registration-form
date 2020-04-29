@@ -1,4 +1,4 @@
-# registration-form
+# registration-login form
 php registration login 
 This is a registration / login system 
 can be used to login to any site.
