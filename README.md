@@ -15,7 +15,9 @@ features include:
 Pages:
 
 login.db - initial page
+
 functions.php - controller & helper functions
+
 index.php - home page reached after sucessful login.
 
 
