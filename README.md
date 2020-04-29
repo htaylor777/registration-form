@@ -10,7 +10,7 @@ features include:
 - reset passwords
 - sessions
 - email activation
-- phpmailer, sends email to users for validating and activating their credientals
+- phpmailer, sends email to users for validating and activating credientals
 
 Pages:
 
