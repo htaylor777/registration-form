@@ -4,6 +4,7 @@ php registration login
 This is a registration / login system 
 can be used to login to any site.
 features include:
+- bootstrap
 - md5, ssh encrytption and token generation
 - timed cookies for "remember me" login and access validations
 - recover lost password
